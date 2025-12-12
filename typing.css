@@ -1,0 +1,11 @@
+/* Typing animation styles */
+.typing-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: #FFA500; /* برتقالي فاتح */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; color: #FFA500; }      /* برتقالي فاتح */
+    50% { opacity: 0; color: #FF4500; }           /* برتقالي غامق عند الإختفاء */
+}

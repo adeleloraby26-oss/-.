@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder's World - Ahmed Al-Bahrawy | Full-Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/typing.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" id="logo">⚡ Thunder</div>
+            <ul class="nav-links" id="nav-links">
+                <!-- Navigation will be rendered by JavaScript -->
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="static/images/profile.jpg" alt="Ahmed Al-Bahrawy profile photo" class="profile-photo" loading="eager">
+                <i class="fas fa-bolt overlay-icon" aria-hidden="true"></i>
+            </div>
+            <h1 id="hero-name" class="typing-text"></h1>
+            <h2 id="hero-description"></h2>
+            <p id="hero-tagline"></p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2 class="section-title fade-in">About Thunder</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <div class="profile-large">
+                        <img src="static/images/profile.jpg" alt="Ahmed Al-Bahrawy profile photo" class="profile-photo" loading="lazy">
+                        <i class="fas fa-bolt overlay-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="about-text slide-in-right" id="about-text">
+                    <!-- About text will be rendered by JavaScript -->
+                </div>
+            </div>
+            <div class="stats-grid fade-in" id="stats-grid">
+                <!-- Stats will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-content">
+            <h2 class="section-title fade-in">My Arsenal</h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-content">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="section-content">
+            <h2 class="section-title fade-in">Client Reviews & Feedback</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="section-content">
+            <h2 class="section-title fade-in">Services I Offer</h2>
+            <div class="services-grid" id="services-grid">
+                <!-- Services will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Let's Connect</h2>
+        <div class="contact-content">
+            <div class="contact-info slide-in-left" id="contact-info">
+                <!-- Contact info will be rendered by JavaScript -->
+            </div>
+
+            <div class="contact-form slide-in-right">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links fade-in" id="social-links">
+            <!-- Social links will be rendered by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" id="footer-content">
+            <!-- Footer content will be rendered by JavaScript -->
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Include the website data management script -->
+    <script src="static/js/website-data.js"></script>
+
+    <script>
+        // Wait for website data to load
+        // Typing animation function with Promise
+        function typeText(element, text, speed = 100) {
+            return new Promise((resolve) => {
+                let i = 0;
+                element.textContent = '';
+                function type() {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    } else {
+                        resolve();
+                    }
+                }
+                type();
+            });
+        }
+
+        document.addEventListener('websiteDataLoaded', () => {
+            // Update site information
+            const siteInfo = websiteData.getSiteInfo();
+            const profileData = websiteData.getProfile();
+            const heroName = document.getElementById('hero-name');
+            
+            if (siteInfo) {
+                document.title = siteInfo.title;
+                document.getElementById('logo').textContent = siteInfo.logo;
+                document.getElementById('hero-description').textContent = siteInfo.description;
+                document.getElementById('hero-tagline').textContent = siteInfo.tagline;
+            }
+
+            // Handle typing animation for hero name only
+            if (profileData && heroName) {
+                // Start typing animation with a small delay
+                setTimeout(() => typeText(heroName, profileData.name, 80), 300);
+            }
+
+            // Render navigation
+            const navigationContainer = document.getElementById('nav-links');
+            if (navigationContainer) {
+                const navigation = websiteData.getNavigation();
+                if (navigation) {
+                    navigationContainer.innerHTML = navigation.map((nav, index) => `
+                        <li><a href="${nav.href}" class="nav-link ${index === 0 ? 'active' : ''}">${nav.text}</a></li>
+                    `).join('');
+                }
+            }
+
+            // Update profile information
+            const profile = websiteData.getProfile();
+            if (profile) {
+                // Update hero name with full profile name
+                document.getElementById('hero-name').textContent = profile.name;
+                
+                const aboutText = document.getElementById('about-text');
+                aboutText.innerHTML = `
+                    <h3>${profile.age} | Egyptian Developer from ${profile.location}</h3>
+                    ${profile.bio.map(paragraph => `<p>${paragraph}</p>`).join('')}
+                `;
+            }
+
+            // Render stats
+            const stats = websiteData.getStats();
+            if (stats) {
+                const statsGrid = document.getElementById('stats-grid');
+                statsGrid.innerHTML = stats.map(stat => `
+                    <div class="stat-card">
+                        <div class="stat-number">${stat.number}</div>
+                        <div class="stat-label">${stat.label}</div>
+                    </div>
+                `).join('');
+            }
+
+            // Render skills
+            const skillsContainer = document.getElementById('skills-grid');
+            websiteData.renderSkills(skillsContainer);
+
+            // Render projects
+            const projectsContainer = document.getElementById('projects-grid');
+            websiteData.renderProjects(projectsContainer);
+
+            // Render reviews
+            const reviewsContainer = document.getElementById('reviews-container');
+            websiteData.renderReviews(reviewsContainer);
+
+            // Render services
+            const servicesContainer = document.getElementById('services-grid');
+            websiteData.renderServices(servicesContainer);
+
+            // Render contact info
+            const contactInfoContainer = document.getElementById('contact-info');
+            websiteData.renderContact(contactInfoContainer);
+
+            // Render social links
+            const socialLinksContainer = document.getElementById('social-links');
+            websiteData.renderSocialLinks(socialLinksContainer);
+
+            // Render footer
+            const footerContainer = document.getElementById('footer-content');
+            websiteData.renderFooter(footerContainer);
+
+            // Initialize animations and interactions
+            initializeWebsite();
+        });
+
+        // Initialize website functionality
+        function initializeWebsite() {
+        // Mobile Navigation
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+            if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+                
+                // Close mobile menu after clicking
+                navLinks.classList.remove('active');
+                
+                // Update active link
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animation elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar transparency on scroll
+        const navbar = document.getElementById('navbar');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.9)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+
+            // Update active navigation based on scroll position
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    const id = section.getAttribute('id');
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            lastScroll = currentScroll;
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Hello Thunder! 
+
+My name is ${name} (${email})
+
+Subject: ${subject}
+
+Message: ${message}
+
+I'd like to discuss potential collaboration opportunities.`;
+            
+                const contact = websiteData.getContact();
+            const whatsappURL = `https://wa.me/201031913195?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            alert('Thank you for your message! You will be redirected to WhatsApp to complete sending your message.');
+            
+            // Reset form
+            e.target.reset();
+        });
+
+        // Add typing effect to hero text (robust: waits for website data and falls back to existing content)
+        const heroTitle = document.querySelector('.hero h1') || document.getElementById('hero-name');
+
+        function getHeroText() {
+            // Prefer profile name from the website data if available
+            try {
+                const profile = window.websiteData && typeof window.websiteData.getProfile === 'function'
+                    ? window.websiteData.getProfile()
+                    : null;
+                if (profile && profile.name) return profile.name;
+            } catch (e) {
+                // ignore
+            }
+            // Fallback to whatever is currently in the DOM
+            return (heroTitle && heroTitle.textContent) ? heroTitle.textContent.trim() : '';
+        }
+
+        // typing function returns a Promise for easier sequencing if needed
+        function typeText(element, text, speed = 100) {
+            return new Promise((resolve) => {
+                let i = 0;
+                element.textContent = '';
+                function type() {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    } else {
+                        resolve();
+                    }
+                }
+                type();
+            });
+        }
+
+        // Start typing after website data is loaded (ensures profile name is available).
+        document.addEventListener('websiteDataLoaded', () => {
+            const text = getHeroText();
+            // short delay so other renderers finish
+            setTimeout(() => {
+                if (heroTitle && text) typeText(heroTitle, text, 80);
+            }, 200);
+        });
+
+        // Add particle effect for special sections
+        function createParticles(container) {
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = '2px';
+                particle.style.height = '2px';
+                particle.style.background = '#0066ff';
+                particle.style.borderRadius = '50%';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animation = `float ${3 + Math.random() * 4}s ease-in-out infinite`;
+                particle.style.opacity = Math.random() * 0.5 + 0.2;
+                container.appendChild(particle);
+            }
+        }
+
+        // Add hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-15px) rotateX(5deg)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) rotateX(0)';
+            });
+        });
+
+        // Add counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace('+', ''));
+                const increment = target / 50;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.ceil(current) + (counter.textContent.includes('+') ? '+' : '');
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.querySelector('.stats-grid');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Add dynamic color changes based on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercent = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 100;
+            const hue = scrollPercent * 3.6; // 360 degrees for full scroll
+            document.documentElement.style.setProperty('--dynamic-color', `hsl(${hue}, 70%, 50%)`);
+        });
+
+        // Add click effects for buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const ripple = document.createElement('span');
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(255, 255, 255, 0.6)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.left = e.offsetX - 10 + 'px';
+                ripple.style.top = e.offsetY - 10 + 'px';
+                ripple.style.width = '20px';
+                ripple.style.height = '20px';
+                
+                btn.style.position = 'relative';
+                btn.style.overflow = 'hidden';
+                btn.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+{
+    "siteInfo": {
+        "title": "fire's World - ADEL ELORABY| Full-Stack Developer",
+        "logo": "🔥 fire",
+        "tagline": "You may not always see Fire... but it's the one you fear most.",
+        "description": "Full-Stack Developer & Backend Specialist"
+    },
+    "profile": {
+        "name": "ADEL EL ORABY",
+        "age": "15 Years Old",
+        "location": "Dakahlia, Egypt",
+        "languages": ["Arabic (Native)", "English (Good)", "German (good)"," Japanese (good)"],
+        "image": "static/images/profile.jpg",
+        "bio": [
+            "Hello World! My name is ADEL ELORABY,I started my coding journey at the age of 12, initially learning game development with Unity Engine. Since then, I've evolved into a full-stack developer with a passion for backend systems.",
+            "I'm mostly self-taught, with additional training from Digital Cubs of Egypt Initiative, ITI (Information Technology Institute), and NTI (National Telecommunication Institute). I love logical thinking and calculations, which is why I prefer backend development over frontend.",
+            "When I'm not coding, I enjoy playing chess, reading Arabic and translated novels, and working on my language skills. My English is good, and I aspire to master German alongside my native Arabic."
+        ]
+    },
+    "stats": [
+        {
+            "number": "3+",
+            "label": "Years Experience"
+        },
+        {
+            "number": "8",
+            "label": "Team Presentations"
+        },
+        {
+            "number": "7+",
+            "label": "Best Team Awards"
+        },
+        {
+            "number": "12+",
+            "label": "Projects Completed"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Backend Development",
+            "icon": "fas fa-server",
+            "skills": ["Python", "Flask", "SQLAlchemy", "REST APIs", "Database Design"]
+        },
+        {
+            "category": "Frontend Development",
+            "icon": "fas fa-palette",
+            "skills": ["HTML5", "CSS3", "JavaScript", "React", "Responsive Design"]
+        },
+        {
+            "category": "Database Management",
+            "icon": "fas fa-database",
+            "skills": ["MySQL", "Database Optimization", "Data Modeling"]
+        },
+        {
+            "category": "Game Development",
+            "icon": "fas fa-gamepad",
+            "skills": ["Unity Engine", "C#", "Game Logic"]
+        },
+        {
+            "category": "Other Skills",
+            "icon": "fas fa-tools",
+            "skills": ["UI/UX Design", "Problem Solving", "Creative Thinking", "Team Leadership"]
+        }
+    ],
+    "projects": [
+        {
+            "id": "kill-enemy-fps",
+            "name": "Kill Enemy FPS",
+            "icon": "fas fa-crosshairs",
+            "description": "An immersive FPS game developed using Unity Engine with advanced enemy AI, weapon systems, and dynamic environments.",
+            "technologies": ["Unity", "C#", "Game AI"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://thunderbahrawy.itch.io/kill-enemy-fps",
+                    "text": "View Project",
+                    "icon": "fas fa-external-link-alt"
+                }
+            ]
+        },
+        {
+            "id": "shoot-gun",
+            "name": "Shoot Gun",
+            "icon": "fas fa-bullseye",
+            "description": "Action-packed shooting game with realistic physics, multiple weapon types, and challenging gameplay mechanics.",
+            "technologies": ["Unity", "Physics", "Animation"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://thunderbahrawy.itch.io/shoot-gun-3",
+                    "text": "View Project",
+                    "icon": "fas fa-external-link-alt"
+                }
+            ]
+        },
+        {
+            "id": "ettasel-nasel",
+            "name": "Ettasel Nasel",
+            "icon": "fas fa-globe",
+            "description": "Modern web application built with Flask featuring user authentication, real-time communication, and responsive design.",
+            "technologies": ["Flask", "Python", "SQLAlchemy", "JavaScript"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://ettaselnasel.pythonanywhere.com/",
+                    "text": "Live Demo",
+                    "icon": "fas fa-external-link-alt"
+                },
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/ElHawaseeb-AI",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "appie-workshop",
+            "name": "Appie Work Shop",
+            "icon": "fas fa-mobile-alt",
+            "description": "Responsive web application designed for workshop management with modern UI/UX and smooth animations.",
+            "technologies": ["HTML", "CSS", "JavaScript", "Responsive"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://appie-eight.vercel.app/",
+                    "text": "View Project",
+                    "icon": "fas fa-external-link-alt"
+                },
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/appie",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "center-al-resala",
+            "name": "Center Al-Resala",
+            "icon": "fas fa-tree",
+            "description": "Comprehensive web platform for educational center management built with Flask and modern backend architecture.",
+            "technologies": ["Flask", "MySQL", "Admin Panel", "CRUD"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://centeralresala.pythonanywhere.com/",
+                    "text": "Live Demo",
+                    "icon": "fas fa-external-link-alt"
+                },
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/Al-Resala",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "thunder-portfolio",
+            "name": "Thunder Portfolio",
+            "icon": "fas fa-rocket",
+            "description": "This very website! A futuristic portfolio built with modern web technologies and smooth animations.",
+            "technologies": ["HTML5", "CSS3", "JavaScript", "Animations"],
+            "links": [
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/ahmedalbahrawy_website",
+                    "text": "Source Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "control-team-1",
+            "name": "Control Team 1",
+            "icon": "fas fa-users-cog",
+            "description": "A web application for team management, developed with HTML, CSS, and JavaScript forms.",
+            "technologies": ["HTML", "CSS", "JavaScript", "Forms"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://control-team1.vercel.app/",
+                    "text": "View Project",
+                    "icon": "fas fa-external-link-alt"
+                },
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/ControlTeam1",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "control-team-2",
+            "name": "Control Team 2",
+            "icon": "fas fa-user-cog",
+            "description": "A second iteration of the team management web application, with enhanced features and improved UI/UX.",
+            "technologies": ["HTML", "CSS", "JavaScript", "UI/UX"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://control-team2.vercel.app/",
+                    "text": "View Project",
+                    "icon": "fas fa-external-link-alt"
+                },
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/ControlTeam2",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "atbara-universities-forum",
+            "name": "Atbara Universities Forum",
+            "icon": "fas fa-university",
+            "description": "A simple web application developed using Flask, allowing users to register for the forum by filling out a form that collects personal information and required documents. Designed with a clean and user-friendly interface.",
+            "technologies": ["Flask", "Python", "HTML", "CSS", "JavaScript", "Forms"],
+            "links": [
+                {
+                    "type": "demo",
+                    "url": "https://atbaracode.pythonanywhere.com/",
+                    "text": "Live Demo",
+                    "icon": "fas fa-external-link-alt"
+                },
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/form-qr-code-generator",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "chatr",
+            "name": "Chatr – Real-Time Chat Application",
+            "icon": "fas fa-comments",
+            "description": "A responsive real-time chat app built with PHP (backend) and HTML, CSS, and JavaScript (frontend). It supports instant messaging across multiple chat rooms, online user lists, emoji support, and notifications. Designed for smooth, dynamic communication with an intuitive interface that works seamlessly on both desktop and mobile devices.",
+            "technologies": ["PHP", "HTML", "CSS", "JavaScript", "Real-time"],
+            "links": [
+                {
+                    "type": "code",
+                    "url": "https://github.com/AhmedAl-Bahrawy/Chat-Coin",
+                    "text": "Code",
+                    "icon": "fab fa-github"
+                }
+            ]
+        },
+        {
+            "id": "confidential-client",
+            "name": "Confidential Client Project",
+            "icon": "fas fa-images",
+            "description": "A private project developed for a client, showcasing advanced features and robust architecture. Images are available for viewing.",
+            "technologies": ["Confidential", "Client Work", "Full-Stack"],
+            "links": [
+                {
+                    "type": "gallery",
+                    "url": "project-gallery.html?project=confidential-client",
+                    "text": "View Images",
+                    "icon": "fas fa-eye"
+                }
+            ]
+        },
+        {
+            "id": "el-magicano-system",
+            "name": "El-Magicano System - School Management",
+            "icon": "fas fa-graduation-cap",
+            "description": "A sophisticated, full-stack web application designed for comprehensive school management, featuring a modern Arabic-friendly interface with neon aesthetics. Built with Flask, SQLAlchemy, and modern frontend technologies.",
+            "technologies": ["Flask", "Python", "SQLAlchemy", "SQLite", "Arabic RTL", "Neon UI"],
+            "links": [
+                {
+                    "type": "gallery",
+                    "url": "project-gallery.html?project=el-magicano-system",
+                    "text": "View Images",
+                    "icon": "fas fa-eye"
+                }
+            ]
+        },
+        {
+            "id": "molouk-alta7leel",
+            "name": "Molouk-Alta7leel",
+            "icon": "fas fa-book-reader",
+            "description": "A comprehensive Arabic learning platform featuring secure video lessons, exam system with results tracking, progress monitoring, and advanced admin tools. Built with secure video player technology to protect content while maintaining accessibility.",
+            "technologies": ["React", "Supabase", "TailwindCSS","AWS", "Video Streaming", "Secure Access", "Exam System", "Admin Panel"],
+            "links": [
+                {
+                    "type": "gallery",
+                    "url": "project-gallery.html?project=molouk-alta7leel",
+                    "text": "View Images",
+                    "icon": "fas fa-eye"
+                }
+            ]
+        }
+    ],
+    "reviews": {
+        "summary": {
+            "rating": "5",
+            "totalReviews": "13+",
+            "text": "Based on 13+ client reviews"
+        },
+        "items": [
+            {
+                "date": "Jan 2025",
+                "avatar": "G",
+                "name": "Mr. Gamal Essa",
+                "role": "Client",
+                "rating": 5,
+                "text": "⭐⭐⭐⭐⭐ Excellent platform — highly recommended!<br><br>Thank you for building this platform. It has made a real difference for my child's Arabic studies.<br><br>The video lessons are clear and well-organized, and the secure access system gives me confidence. The interface is clean and easy to use, and the progress tracking helps us see improvement.<br><br>The exam system and results tracking are valuable, and the admin tools show attention to detail. The secure video player ensures content is protected while remaining accessible.<br><br>This platform has become essential for our Arabic learning. Thank you for creating such a valuable resource.<br><br>— A grateful parent",
+                "projectId": "molouk-alta7leel"
+            },
+            {
+                "date": "Jul 2025",
+                "avatar": "M",
+                "name": "El-Shikh Mohamed",
+                "role": "Business Owner",
+                "rating": 5,
+                "text": "Thunder delivered an exceptional web application for our business. His backend skills are truly impressive for someone his age. The project was completed on time and exceeded our expectations. Highly recommended!",
+                "projectId": "el-magicano-system"
+            },
+            {
+                "date": "Oct 2024",
+                "avatar": "S",
+                "name": "Ahmed Abo Gabal",
+                "role": "Startup Founder",
+                "rating": 5,
+                "text": "Working with Ahmed was a pleasure. He's not only technically skilled but also great at communication. His Flask-based solution solved all our database challenges. Will definitely work with him again!",
+                "projectId": "confidential-client"
+            }
+        ]
+    },
+    "services": [
+        {
+            "icon": "fas fa-server",
+            "title": "Backend Development",
+            "description": "Robust server-side applications with Flask, Python, and database integration. API development and system architecture.",
+            "price": "Starting from 2000EGP"
+        },
+        {
+            "icon": "fas fa-laptop-code",
+            "title": "Full-Stack Web Development",
+            "description": "Complete web applications from frontend to backend, responsive design, and modern user experiences.",
+            "price": "Starting from 4000EGP"
+        },
+        {
+            "icon": "fas fa-database",
+            "title": "Database Design & Optimization",
+            "description": "Efficient database structures, query optimization, and data modeling for scalable applications.",
+            "price": "Starting from 1800EGP"
+        },
+        {
+            "icon": "fas fa-gamepad",
+            "title": "Game Development",
+            "description": "Unity-based game development with engaging gameplay mechanics and polished user experiences.",
+            "price": "Starting from 3000EGP"
+        },
+        {
+            "icon": "fas fa-mobile-alt",
+            "title": "Responsive Web Design",
+            "description": "Mobile-first, responsive websites that look great on all devices with smooth animations and modern design.",
+            "price": "Starting from 1800EGP"
+        },
+        {
+            "icon": "fas fa-cogs",
+            "title": "API Development",
+            "description": "RESTful APIs, third-party integrations, and microservices architecture for scalable web applications.",
+            "price": "Starting from 3000EGP"
+        }
+    ],
+    "contact": {
+        "phone": "+20 1227675955",
+        "email": "adeleloraby26@gmail.com",
+        "location": "Dakahlia, Egypt",
+        "age": "15 Years Old",
+        "languages": "Arabic (Native), English (Good), German (good)","Japanese (good)",
+        "socialLinks": [
+            {
+                "platform": "WhatsApp",
+                "url": "https://wa.me/201227675955",
+                "icon": "fab fa-whatsapp",
+                "title": "WhatsApp"
+            },
+            {
+                "platform": "Email",
+                "url": "mailto: adeleloraby26@gmail.com",
+                "icon": "fas fa-envelope",
+                "title": "Email"
+            },
+            {
+                "platform": "GitHub",
+                "url": "https://github.com",
+                "icon": "fab fa-github",
+                "title": "GitHub"
+            },
+            {
+                "platform": "LinkedIn",
+                "url": "https://linkedin.com",
+                "icon": "fab fa-linkedin",
+                "title": "LinkedIn"
+            },
+            {
+                "platform": "Discord",
+                "url": "http://discordapp.com",
+                "icon": "fab fa-discord",
+                "title": "Discord"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "© 2025 ADEL ELORABY". All rights reserved.",
+        "tagline": "Stay loud, even in silence — that's the Thunder way.",
+        "credit": "Made with ❤️ by ADEL ELORABY"
+    },
+    "navigation": [
+        {
+            "id": "home",
+            "text": "Home",
+            "href": "#home"
+        },
+        {
+            "id": "about",
+            "text": "About",
+            "href": "#about"
+        },
+        {
+            "id": "skills",
+            "text": "Skills",
+            "href": "#skills"
+        },
+        {
+            "id": "projects",
+            "text": "Projects",
+            "href": "#projects"
+        },
+        {
+            "id": "reviews",
+            "text": "Reviews",
+            "href": "#reviews"
+        },
+        {
+            "id": "services",
+            "text": "Services",
+            "href": "#services"
+        },
+        {
+            "id": "contact",
+            "text": "Contact",
+            "href": "#contact"
+        }
+    ]
+}

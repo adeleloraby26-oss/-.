@@ -1,0 +1,38 @@
+{
+    "el-magicano-system": {
+        "name": "El-Magicano System - School Management Web Application",
+        "image_folder": "static/images/projects/El-Magicano-System/",
+        "images": [
+            "Desktop Screenshot 2025.08.15 - 16.29.38.41.png",
+            "Desktop Screenshot 2025.08.15 - 16.29.46.66.png",
+            "Desktop Screenshot 2025.08.15 - 16.30.21.36.png",
+            "Desktop Screenshot 2025.08.15 - 16.31.14.94.png",
+            "Desktop Screenshot 2025.08.15 - 16.31.54.85.png",
+            "Desktop Screenshot 2025.08.15 - 16.32.19.58.png",
+            "Desktop Screenshot 2025.08.15 - 16.32.49.17.png",
+            "Desktop Screenshot 2025.08.15 - 16.33.00.38.png",
+            "Desktop Screenshot 2025.08.15 - 16.33.38.06.png",
+            "Desktop Screenshot 2025.08.15 - 16.33.53.98.png",
+            "Desktop Screenshot 2025.08.15 - 16.34.33.43.png",
+            "Desktop Screenshot 2025.08.15 - 16.34.49.03.png"
+        ]
+    },
+    "molouk-alta7leel":{
+        "name": "Molouk-Alta7leel",
+        "image_folder": "static/images/projects/molouk-alta7leel/",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg",
+            "4.jpeg",
+            "5.jpeg",
+            "6.jpeg",
+            "7.jpeg",
+            "8.jpeg",
+            "9.jpeg",
+            "10.jpeg",
+            "11.jpeg"
+
+        ]
+    }
+}
